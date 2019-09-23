@@ -8,12 +8,12 @@ def sqrt(x):
     # keep getting a better estimate for the sqrt of x 
     # until you are within 2 decimal places
     # "abs" returns postives integers of negitive numbers
-    while abs(z*z - x) >= 0.01:
+    while abs(z*z - x) >= 0.00000000000001:
         # get a better approximation for the sqrt
         z -= (z*z - x) / (2*z)
     return z
 # print the sqrt of number in function
-z = sqrt(64.0)
+z = sqrt(64)
 # print z
 print(z)
 # print the sqrt of the sqrt z
